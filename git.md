@@ -30,3 +30,8 @@ In the above case, the files will now remain in place.
 To remove the commit and also delete the files, run:
 
 `git reset --hard HEAD~1`
+
+## Merge changes from `master` into branch
+
+`git checkout <branchname>`  
+`git rebase master`
