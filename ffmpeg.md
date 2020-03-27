@@ -9,3 +9,7 @@
 * `-i %06d.png` tells which files to use, `%06d` means zero-padded to 6 digits
 * -q:v video quality, lower is better
 * -r 25 is the *output* framerate
+
+## convert container while retaining contents
+
+`ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4`
