@@ -12,4 +12,4 @@
 
 ## convert container while retaining contents
 
-`ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4`
+`ffmpeg -i video.mkv -codec copy video.mp4`
