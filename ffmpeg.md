@@ -13,3 +13,8 @@
 ## convert container while retaining contents
 
 `ffmpeg -i video.mkv -codec copy video.mp4`
+
+## mp4 to mp3
+
+`ffmpeg -i filename.mp4 filename.mp3`
+

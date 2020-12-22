@@ -35,3 +35,11 @@ To remove the commit and also delete the files, run:
 
 `git checkout <branchname>`  
 `git rebase master`
+
+## Sort files by least recently modified in git
+
+```
+while read file; do echo $(git log --pretty=format:%ad -n 1 --date=raw -- $file) $file; done < <(git ls-tree -r --name-only HEAD) | sort -k1,1n
+```
+
+Taken from https://stackoverflow.com/a/19362660
