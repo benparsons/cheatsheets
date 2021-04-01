@@ -18,3 +18,8 @@
 
 `ffmpeg -i filename.mp4 filename.mp3`
 
+## get file info
+
+`ffprobe -i input.file -show_format | grep duration`
+
+`ffprobe -i input.file -show_format`
