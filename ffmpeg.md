@@ -23,3 +23,11 @@
 `ffprobe -i input.file -show_format | grep duration`
 
 `ffprobe -i input.file -show_format`
+
+## create video from subsection by time
+
+`ffmpeg -i input.mov -ss 00:01:33 -c copy output.mov`
+
+## resize
+
+`ffmpeg -i input.jpg -vf scale=320:-1 output_320.png`
