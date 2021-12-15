@@ -10,3 +10,7 @@
 `curl --header "Authorization: Bearer <access_token>" -X POST "https://matrix.bpulse.org/_synapse/admin/v1/purge_media_cache?before_ts=<timestamp>"`
 
 - timestamps include ms
+
+## Sigils encoding
+
+- `!` => `%21`
