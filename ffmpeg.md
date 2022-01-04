@@ -31,3 +31,7 @@
 ## resize
 
 `ffmpeg -i input.jpg -vf scale=320:-1 output_320.png`
+
+## Single image + audio -> video
+
+`ffmpeg -r 1 -loop 1 -i image.jpg -i audio.flac  -acodec copy -r 1 -shortest -vf scale=1280:720 out.avi`
